@@ -18,7 +18,7 @@ This Python3 script requires the inotify package
 # Usage
 ```usage: dirmon.py [-h] -t TARGET [-c CREATE] [-m MODIFY] [-d DELETE] [-a ALL]
 
-Export CP policy as CSV
+Monitor a directory for changes and execute scripts based on events
 
 options:
   -h, --help            show this help message and exit

@@ -53,7 +53,7 @@ def watch_directory(directory, log, scripts):
 # Main entry point
 if __name__ == "__main__":
   # Setup the arg parser
-  parser = argparse.ArgumentParser(description="Export CP policy as CSV")
+  parser = argparse.ArgumentParser(description="Monitor a directory for changes and execute scripts based on events")
   parser.add_argument("-t", "--target", type=str, required=True,  help="Full path of the directory to monitor for changes.")
   parser.add_argument("-c", "--create", type=str, required=False, help="Script to run when objects are created.")
   parser.add_argument("-m", "--modify", type=str, required=False, help="Script to run when objects are modified.")
