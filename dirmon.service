@@ -1,0 +1,16 @@
+[Unit]
+Description=Watch Directory Service
+After=network.target
+
+[Service]
+Type=simple
+KillSignal=SIGINT
+User=dpcox
+Group=dpcox
+ExecStart=/home/dpcox/Dropbox/VSCode/python/dirmon/dirmon.py \
+  --target /home/dpcox/Dropbox/VSCode/python/dirmon/workdir \
+  --all /home/dpcox/Dropbox/VSCode/python/dirmon/doSomething.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
