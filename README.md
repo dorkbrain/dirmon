@@ -6,9 +6,6 @@ This Python3 script requires the inotify package
 
 `python3 -m pip install inotfiy`
 
-# Command line
-`dirmon.py --target <directory> --create <createscript> --modify <modifyscript> --delete <deletescript> --all <allscript>`
-
 # Arguments passed to scripts
 |position|description|
 |:---:|:---|
