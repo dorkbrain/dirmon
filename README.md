@@ -7,12 +7,10 @@ This Python3 script requires the inotify package
 `python3 -m pip install inotfiy`
 
 # Command line
-`dirmon.py --target <directory> --create <createscript> --modify <modifyscript> --delete <deletescript>`
+`dirmon.py --target <directory> --create <createscript> --modify <modifyscript> --delete <deletescript> --all <allscript>`
 
 # Arguments passed to scripts
 |position|description|
 |:---:|:---|
 | Arg1 | Event Type (CREATE/MODIFY/DELETE) |
-| Arg2 | Directory of object triggering the event |
-| Arg3 | Filename of object triggering the change |
-| Arg4 | Full path of the object triggering the change |
+| Arg2 | Full path of the object triggering the change |
