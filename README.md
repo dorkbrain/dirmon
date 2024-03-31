@@ -16,7 +16,8 @@ This Python3 script requires the inotify package
 | Arg2 | Full path of the object triggering the change |
 
 # Usage
-```usage: dirmon.py [-h] -t TARGET [-c CREATE] [-m MODIFY] [-d DELETE] [-a ALL]
+```
+usage: dirmon.py [-h] -t TARGET [-c CREATE] [-m MODIFY] [-d DELETE] [-a ALL]
 
 Monitor a directory for changes and execute scripts based on events
 
@@ -30,4 +31,5 @@ options:
                         Script to run when objects are modified.
   -d DELETE, --delete DELETE
                         Script to run when objects are deleted.
-  -a ALL, --all ALL     Script to run when objects are created, modified, or deleted.```
+  -a ALL, --all ALL     Script to run when objects are created, modified, or deleted.
+```
