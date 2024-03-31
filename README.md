@@ -14,3 +14,20 @@ This Python3 script requires the inotify package
 |:---:|:---|
 | Arg1 | Event Type (CREATE/MODIFY/DELETE) |
 | Arg2 | Full path of the object triggering the change |
+
+# Usage
+```usage: dirmon.py [-h] -t TARGET [-c CREATE] [-m MODIFY] [-d DELETE] [-a ALL]
+
+Export CP policy as CSV
+
+options:
+  -h, --help            show this help message and exit
+  -t TARGET, --target TARGET
+                        Full path of the directory to monitor for changes.
+  -c CREATE, --create CREATE
+                        Script to run when objects are created.
+  -m MODIFY, --modify MODIFY
+                        Script to run when objects are modified.
+  -d DELETE, --delete DELETE
+                        Script to run when objects are deleted.
+  -a ALL, --all ALL     Script to run when objects are created, modified, or deleted.```
